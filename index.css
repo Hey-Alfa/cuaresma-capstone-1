@@ -16,13 +16,21 @@ body {
 	justify-content: space-between;
 	align-content: center;
 	align-items: center;
-
+	z-index: 1140;
 	position: sticky;
 	top: 0;
 
 	background-color: #f4a8a8;
 }
-
+[src="images/logo-pink.png"] {
+	width: 100%;
+	max-width: 100px;
+}
+[href="index.html"]:hover {
+	opacity: .50;
+	border: 1px solid #f18e8e;
+	border-radius: 10px;
+}
 .logo .link {
 	font-size: 3rem;
 	color: #f3f6fd;
@@ -83,7 +91,7 @@ h1, h3{
 
 /*Profile Content*/
 .cont {
-	padding: 20px;
+	padding: 3rem;
 	background-color: #f7e6ff;
 }
 .cont div {
@@ -133,18 +141,13 @@ h1, h3{
 	margin-bottom: 1rem;
 }
 .my-experience {
-	width: 100%;
 	padding: 10px;
-	margin-left: 10px;
 	background-color: #fff9ae;
 	border-radius: 30px;
 }
 
 .my-container {
-	width: 100%;
-	padding: 10px;
-	margin-left: 10px;
-	background-color: #fff566;
+
 	border-radius: 30px;
 }
 .educ, .goal{
