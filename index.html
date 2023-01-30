@@ -167,28 +167,46 @@ font-family: 'Sofia Sans Condensed', sans-serif; font-family: 'Dancing Script', 
 		</div>
 		<!-- Slideshow End-->
 				<!-- Capstones -->
-				<div class="container-fluid capstone">
-					<h2 class="mt-5 text-center">Zuitt Capstones</h2>
-					<div class="row pl-5 pr-1 py-1">
-						<div class="col-lg-4 col-12 px-4 py-2 mt-lg-0 mt-5">
-							<h3 class="py-2 text-center">Capstone 1</h3>
-							<iframe src="index.html" class="border border-0 p-0 col-12" frameborder="0">Capstone 1</iframe>
-							<div class="container text-center mt-lg-3 m-0">
-								<a href="" class="px-5 py-1">Visit</a>
+				<div class="container-fluid">
+					<h3 class="p-3 text-center">Zuitt Capstones</h3>
+					<div class="row">
+						<div class="card-body col-lg-4 col-md-6 col-12">
+							<div class="container">
+								<div class="card">
+									<div class="card-header">Capstons 1</div>
+									<div class="card-body row">
+										<iframe src="index.html" title="portfolio" class=" border p-0 col-12" frameborder="0">Capstone 1</iframe>
+									</div> 
+									<div class="card-footer text-center">
+										<a href="index.html" class="caps-btn px-3 py-1">Visit</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-12 px-4 py-2 mt-lg-0 mt-5">
-							<h3 class="py-2 text-center">Capstone 2</h3>
-							<img src="images/capstone-2.png" class="border border-0 p-0 col-12" alt="capstone-2">
-							<div class="container text-center mt-lg-3 m-0">
-								<a href="" class="px-5 py-1">Visit</a>
+						<div class="card-body col-lg-4 col-md-6 col-12">
+							<div class="container">
+								<div class="card">
+									<div class="card-header">Castone 2</div>
+									<div class="card-body">
+										<iframe src="images/Capstone-2.png" title="W3school" class=" border p-0 col-12" frameborder="0">Capstone 2</iframe>
+									</div> 
+									<div class="card-footer text-center">
+										<a href="index.html" class="caps-btn px-3 py-1">Visit</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-12 px-4 py-2 mt-lg-0 mt-5">
-							<h3 class="py-2 text-center">Capstone 3</h3>
-							<img src="images/capstone-3.png" class="border border-0 p-0 col-12" alt="capstone-3">
-							<div class="container text-center mt-lg-3 m-0">
-								<a href="" class="px-5 py-1">Visit</a>
+						<div class="card-body col-lg-4 col-md-6 col-12">
+							<div class="container">
+								<div class="card">
+									<div class="card-header">Capstone 3</div>
+									<div class="card-body">
+										<iframe src="images/Capstone-3.png" title="W3school" class=" border p-0 col-12" frameborder="0">Capstone 3</iframe>
+									</div> 
+									<div class="card-footer text-center">
+										<a href="index.html" class="caps-btn px-3 py-1">Visit</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -198,59 +216,80 @@ font-family: 'Sofia Sans Condensed', sans-serif; font-family: 'Dancing Script', 
 
 
 		<!-- Contact Me -->
-		<div class="form-cont" id="contact">
-			<div class="form-margin">
-				<form class="d-flex flex-column">
-					<h5 class="text-center">Message me</h5>
-					<div class="mb-2">
-						<div class="row justify-content-center">
-							<label for="name" class="align-content-center">Name</label>
-						</div>
-						<input type="Text" class="form-control" id="name" aria-describedby="emailHelp">
+		<div class=" min-vh-70 p-md-5">
+			<h3 class="p-3 text-center">Contact Me</h3>
+	
+			<div class="col-md-8 col-xl-4 mx-auto p-3">
+				<form>
+					<div class="form-group">
+						<label for="name-area">Name</label>
+						<input type="text" class="form-control" id="name-area" placeholder="Your Name">
 					</div>
-					<div class="mb-2">
-						<div class="row justify-content-center">
-							<label for="e-mail" class="align-content-center">Email address</label>
-						</div>
-						<input type="email" class="form-control" id="e-mail" aria-describedby="emailHelp">
+					<div class="form-group">
+						<label for="email-area">Email</label>
+						<input type="email" class="form-control" id="email-area" placeholder="name@sample.com">
 					</div>
-					<div class="mb-2">
-						<div class="row justify-content-center">
-							<label for="message" class="align-content-center">You Message</label>
-						</div>
-						<textarea class="form-control" id="message" rows="3"></textarea>
+					<div class="form-group">
+						<label for="contact-number-area">Contact Number</label>
+						<input type="text" class="form-control" id="contact-number-area" placeholder="+63 0912 345 6789">
 					</div>
-					<div class="row justify-content-center">
-						<button type="submit" class="button">Submit</button>
+					<div class="form-group">
+						<label for="textarea-area">Message</label>
+						<textarea class="form-control" id="textarea-area" rows="5"></textarea>
+					</div>
+	
+					<button type="button" class="btn" data-toggle="modal" data-target="#pop-modal">
+						Send Email!
+					</button>
+					<div class="modal fade" id="pop-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title text-dark" id="modal-label">Thank you for contacting us!</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<h6 class="text-dark">Message Successfully Sent!</h6>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
 					</div>
 				</form>
+	
 			</div>
 		</div>
-		<!-- Project -->
+		<!-- Form End -->
 
 		<!-- Footer -->
 
-		<div class="footer">
+		<div class="container-fluid">
+			<div class="text-center mb-2">
+				<a href="#top">&#8593;</a>
+			</div>
 			<div class="footer-cont">
-				<div class="link">
+				<div class="text-center">
 					<a href="https://web.facebook.com/alfajhoy.cuaresma.9/" target="_blank" class="hover"><i
 							class="bi bi-facebook" class="hover"></i></a>
 					<a href="https://www.instagram.com/" target="_blank" class="hover"><i
 							class="bi bi-instagram"></i></a>
 					<a href="https://www.linkedin.com/in/alpha-joy-cuaresma-65981a171/" target="_blank" class="hover"><i
 							class="bi bi-linkedin"></i></a>
-					<a href="https://codepen.io/your-work" target="_blank" class="hover"><i
+					<a href="https://codepen.io/Hey_alfa" target="_blank" class="hover"><i
 							class="bi bi-code-slash"></i></a>
-
 				</div>
-				<div>
+				<div class="text-center footer">
 					<span>Terms of Service</span>
 					<span>|</span>
 					<span>Privacy Policy</span>
 					<span>|</span>
 					<span>© 2022 All Rights Reserved</span>
 				</div>
-				<div class="arrow"><a href="#top" class="top">&#8593;</a></div>
+				
 			</div>
 		</div>
 
