@@ -153,13 +153,13 @@ div[class="mx-3"] a:hover{
 [class="container-fluid profile"]  { 
 	margin-bottom: 6rem;
 }
-[class="col-md-6 pl-5 order order-md-1 order-2"] h1 {
+[class="col-md-6 pl-md-5 pl-0 order order-md-1 order-2"] h1 {
 	color: #ed7878;
     font-family:"Roboto Mono", monospace;
     font-weight: 500;
     font-size: 3rem;
 }
-[class="col-md-6 pl-5 order order-md-1 order-2"] p {
+[class="col-md-6 pl-md-5 pl-0 order order-md-1 order-2"] p {
 	color: #ed7878;
     font-family: 'Rubik', sans-serif;
     font-size: 1.1rem;

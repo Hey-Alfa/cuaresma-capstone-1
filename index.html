@@ -88,7 +88,7 @@ font-family: 'Sofia Sans Condensed', sans-serif; font-family: 'Dancing Script', 
 	<!-- Profile -->
 	<div class="container-fluid profile">
 		<div class="row mt-2 ml-5">
-			<div class="col-md-6 pl-5 order order-md-1 order-2">
+			<div class="col-md-6 pl-md-5 pl-0 order order-md-1 order-2">
 				<h1 class="mt-5 mb-3" id="about-me">About Me</h1>
 				<p>Hello! My name is Alpha Joy and I enjoy creating things that live on the internet. My interest in web
 					started back in 2022 when my sister taught me the basics of HTM & CSS. With that I start watch tutorials
@@ -238,27 +238,9 @@ font-family: 'Sofia Sans Condensed', sans-serif; font-family: 'Dancing Script', 
 						<textarea class="form-control" id="textarea-area" rows="5"></textarea>
 					</div>
 	
-					<button type="button" class="btn" data-toggle="modal" data-target="#pop-modal">
+					<button type="button" class="btn" id="button" data-toggle="modal" data-target="#pop-modal">
 						Send Email!
 					</button>
-					<div class="modal fade" id="pop-modal" tabindex="-1" aria-labelledby="modal-label" aria-hidden="true">
-						<div class="modal-dialog">
-							<div class="modal-content">
-								<div class="modal-header">
-									<h5 class="modal-title text-dark" id="modal-label">Thank you for contacting us!</h5>
-									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-									</button>
-								</div>
-								<div class="modal-body">
-									<h6 class="text-dark">Message Successfully Sent!</h6>
-								</div>
-								<div class="modal-footer">
-									<button type="button" class="btn" data-dismiss="modal">Close</button>
-								</div>
-							</div>
-						</div>
-					</div>
 				</form>
 	
 			</div>
@@ -295,7 +277,7 @@ font-family: 'Sofia Sans Condensed', sans-serif; font-family: 'Dancing Script', 
 
 		<!-- Footer -->
 
-		<!-- script -->
+		<!-- Bootstrap Script -->
 		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 			crossorigin="anonymous"></script>
@@ -305,6 +287,18 @@ font-family: 'Sofia Sans Condensed', sans-serif; font-family: 'Dancing Script', 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
 			integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
 			crossorigin="anonymous"></script>
+		<!-- Bootstrap Script End -->
+
+		<!-- Form Script -->
+			<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+			</script>
+			<script type="text/javascript">
+				(function () {
+					emailjs.init("bg8agF-K2YnTdd1jQ");
+				})();
+			</script>
+			<script src="js/form.js"></script>
+		<!-- Form Script End -->
 		<!-- My Script -->
 		<script src="js/index.js"></script>
 </body>
