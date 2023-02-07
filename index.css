@@ -39,9 +39,20 @@ body {
   background-color: #f4a8a8;
 }
 
-[src="images/logo-pink.png"] {
+#logo {
 	width: 100%;
-	max-width: 90px;
+	max-width: 52px;
+	margin: 0 2rem;
+}
+#logo:hover{
+	border: 2px solid #f18e8e;
+	background-color: #f18e8e;
+	opacity: .70;
+}
+.logo-brand {
+	font-size: 3rem;
+	color: #f2f2f2;
+
 }
 .topnav a:not(:first-child, :last-child) {
   float: right;
@@ -65,10 +76,6 @@ body {
 
 .topnav a.active-logo {
   color: white;
-}
-[src="images/logo-pink.png"]:hover {
-	border: 2px solid #f18e8e;
-	opacity: .50;
 }
 
 .topnav .icon {
