@@ -49,11 +49,6 @@ body {
 	background-color: #f18e8e;
 	opacity: .70;
 }
-.logo-brand {
-	font-size: 3rem;
-	color: #f2f2f2;
-
-}
 .topnav a:not(:first-child, :last-child) {
   float: right;
   display: block;
