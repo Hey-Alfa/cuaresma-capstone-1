@@ -39,12 +39,12 @@ body {
   background-color: #f4a8a8;
 }
 
-#logo {
+[src="images/hey-alfa-logo-white.png"] {
 	width: 100%;
 	max-width: 52px;
 	margin: 0 2rem;
 }
-#logo:hover{
+[src="images/hey-alfa-logo-white.png"]:hover{
 	border: 2px solid #f18e8e;
 	background-color: #f18e8e;
 	opacity: .70;
