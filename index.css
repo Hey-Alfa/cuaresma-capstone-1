@@ -331,19 +331,13 @@ h3[class="p-3 text-center"] {
   font-weight: 500;
   font-size: 3rem;
 }
-[title="portfolio"],
-[src="images/Capstone-2.png"],
-[src="images/Capstone-3.png"] {
+[title="portfolio"] {
   height: 50vh !important;
 }
-[title="e-Commerce API"],
-[src="images/Capstone-2.png"],
-[src="images/Capstone-3.png"] {
+[title="e-Commerce API"] {
   height: 50vh !important;
 }
-[title="e-Commerce App"],
-[src="images/Capstone-2.png"],
-[src="images/Capstone-3.png"] {
+[title="e-Commerce App"] {
   height: 50vh !important;
 }
 [class="card"]:hover {
